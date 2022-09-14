@@ -1,0 +1,170 @@
+/* ======================================
+ *
+ NAV
+ *
+ ======================================== */
+@media screen and (min-width: 1024px)
+	#site-navigation
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: calc( 100% - 200px )
+		padding: 35px 10px
+		position: relative
+
+		text-transform: uppercase
+		&:before,
+		&:after
+			content: ''
+			height: 100%
+			position: absolute
+			top: 0
+
+		&:before
+			width: calc( 100% - 60px )
+			left: 0
+			background-image: url('../images/pavio.png'), url('../images/pavio.png')
+			background-position:  left 8px, left calc( 100% - 3px )
+			background-repeat: no-repeat, no-repeat
+			z-index: 1
+		
+		&:after
+			width: 70px
+			right: 0
+			background-image: url('../images/fogo.png'), url('../images/fogo.png')
+			background-position:  right top, left bottom
+			background-repeat: no-repeat, no-repeat
+			z-index: 2
+
+
+		.site-name,
+		.site-description
+			font-family: $main-font
+			
+
+		.site-name
+			font-size: 1.6rem
+			font-weight: 400
+
+		.site-description
+			font-size: 1.2rem
+			font-weight: 400
+			position: absolute
+			left: 0
+			bottom: -40px
+
+		.box-nav
+			vertical-align: top
+			padding: 0
+			z-index: 3
+			.menu-header-menu-container
+				display: inline-block
+				vertical-align: top
+				margin: 0
+				padding: 0
+				ul
+					display: none
+					list-style-type: none
+				/*- first line -*/
+				> ul
+					display: inline-flex
+					align-items: flex-end
+					padding: 0
+					text-align: center
+					> li
+						padding: 0px 10px
+						border-bottom: 2px solid transparent
+						position: relative
+						font-size: 1.6rem
+						font-weight: 400
+						font-family: $secundary-font
+						text-transform: uppercase
+						color: $light-main
+						text-align: center
+						&:last-child
+							padding-right: 0px
+						&:hover,
+						&.current_page_item
+							border-bottom-color: $light-main
+							
+						a
+							display: block
+							color: inherit
+							font-family: inherit
+							text-transform: uppercase
+
+							img
+								display: block
+								margin: 0 auto
+								height: 30px
+								width: auto
+								text-align: center
+						ul
+							min-width: 150px
+							margin-left: 0
+							padding: 0px 10px
+							position: absolute
+							background-color: $main-color
+							top: 0
+							left: 100%
+							li
+								padding: 10px 5px
+								border-bottom: 1px solid #fff
+								font-weight: 400
+								text-transform: capitalize
+								text-align: left
+								&:last-child
+									border-bottom: none
+
+								&:hover
+									opacity: 0.8
+
+						> ul
+							margin-top: 2px
+							top: 100%
+							left: 0
+							border-radius: 0 10px 10px
+							animation: growDown 300ms ease-in-out forwards
+							transform-origin: top center
+							
+						&:hover
+							> ul
+								display: block
+
+@media screen and (min-width: 1200px)
+	#site-navigation
+		.site-name
+			font-size: 2.5rem
+			font-weight: 400
+
+		.site-description
+			font-size: 1.4rem
+
+		.box-nav
+			.menu-header-menu-container
+				> ul
+					> li
+						a
+							img
+								height: 50px
+
+
+
+@media screen and (max-width: 1023px)
+	#site-navigation
+		display: none
+
+/*- Menu toogle -*/
+.menu-toggle
+	display: none
+
+
+@keyframes growDown
+	0%
+		transform: scaleY(0)
+
+	80%
+		transform: scaleY(1.1)
+
+	100%
+		transform: scaleY(1)

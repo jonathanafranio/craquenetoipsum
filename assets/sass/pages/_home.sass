@@ -1,0 +1,183 @@
+.first-frame,   
+.about
+    .container
+        display: flex
+        justify-content: space-between
+
+.first-frame
+    padding: 50px 0
+    background-color: #343434
+
+    .container
+        @media screen and (max-width: 1023px)
+            flex-direction: column
+
+
+.card
+    display: flex
+    @media screen and (min-width: 1024px)
+        padding: $padding
+        flex: 1
+
+    &.-first
+        @media screen and (min-width: 1024px)
+            padding-left: 0
+            padding-right: $padding*2
+
+    &.-last
+        @media screen and (min-width: 1024px)
+            padding-left: $padding*2
+            padding-right: 0
+
+    &__container
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+        align-items: center
+        width: 100%
+        background-color: #3E3E3E
+        box-shadow: 0 2px 3px rgba(10,10,10,.1),0 0 0 1px rgba(10,10,10,.1)
+
+        @media screen and (max-width: 1023px)
+            padding: 10px
+            margin-bottom: 30px
+
+        .-last &
+            @media screen and (max-width: 1023px)
+                padding-bottom: 0
+
+        @media screen and (min-width: 1024px)
+            flex: 1
+
+    
+
+    &__big-text
+        font-size: 2rem
+        text-align: center
+        @media screen and (max-width: 1023px)
+            margin-bottom: 20px
+
+    &__submit,
+    &__input,
+    &__copy
+        border: none
+        border-radius: 10px
+
+    &__submit,
+    &__input
+        @media screen and (max-width: 1023px)
+            width: 100%
+
+        @media screen and (min-width: 1024px)
+            width: 80%
+
+    &__input
+        padding: 5px 10px
+        font-size: 2.4rem
+        background-color: $bg-secundary
+        @media screen and (max-width: 1023px)
+            margin-bottom: 20px
+
+
+    &__submit
+        text-transform: uppercase
+        font-weight: 700
+        color: $main-color
+        background: $yellow
+
+        @media screen and (max-width: 1023px)
+            padding: 10px 5px
+            font-size: 1.4rem
+
+        @media screen and (min-width: 1024px)
+            padding: 10px
+
+        @media screen and (min-width: 1024px) and (max-width: 1199px)
+            font-size: 12px
+
+        @media screen and (min-width: 1200px)
+            font-size: 14px
+
+
+    &__copy
+        display: flex
+        justify-content: space-around
+        padding: 10px
+        text-transform: uppercase
+        font-weight: 700
+        color: $main-color
+        background: $yellow
+
+        @media screen and (max-width: 1023px)
+            width: 100%
+            max-width: 270px
+
+        @media screen and (min-width: 1024px)
+            width: 70%
+
+        @media screen and (min-width: 1024px) and (max-width: 1199px)
+            font-size: 12px
+
+        @media screen and (min-width: 1200px)
+            font-size: 14px
+
+        i
+            @media screen and (max-width: 1023px)
+                width: 20px
+                
+            @media screen and (min-width: 1024px) and (max-width: 1199px)
+                width: 16px
+
+            @media screen and (min-width: 1200px)
+                width: 20px
+        
+#result
+    display: block
+    padding: 10px
+    
+    color: $main-color
+    overflow: auto
+    border-radius: 10px
+    background-color: $bg-secundary
+    resize: none
+    outline: none
+    border: none
+    @media screen and (max-width: 1023px)
+        width: 100%
+        min-height: 65vh
+        margin-bottom: 10px
+    
+    @media screen and (min-width: 1024px)
+        width: 80%
+        height: 70%
+        max-height: 290px
+    
+    
+    
+.frame-aleatorio
+    height: 50vh
+    background-image: url('../img/neto.jpg')
+    background-attachment: fixed
+    background-size: cover
+
+
+.about
+    background-color: #ECF7FF
+    color: $brown-light
+    font-size: 1.8rem
+    .container
+        align-items: center
+        @media screen and (max-width: 1023px)
+            flex-wrap: wrap
+        
+    &__grid
+        display: flex
+        flex-direction: column
+
+    &__title
+        color: $brown-light
+        font-weight: 400
+        font-size: 4rem
+
+        &-strong
+            color: $main-color

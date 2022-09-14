@@ -1,0 +1,80 @@
+/* ======================================
+ *
+ HEADER
+ *
+ ========================================
+.header
+	display: flex
+	justify-content: center
+	width: 100%
+	//height: 65px
+	overflow: hidden
+	background-color: $bg-header
+	color: $main-color
+
+	.container
+		display: flex
+		
+		align-items: center
+		@media screen and ( max-width: 767px )
+			flex-wrap: wrap-reverse
+			justify-content: center
+
+		@media screen and ( min-width: 768px )
+			justify-content: space-between
+
+	&__logo
+		@media screen and ( max-width: 767px )
+			height: 75px
+
+		@media screen and ( min-width: 768px )
+			height: 95px
+
+	&__h1
+		text-transform: uppercase
+		font-weight: 900
+
+		@media screen and ( max-width: 767px )
+			width: 195px
+			padding: 3px 0
+
+		@media screen and ( min-width: 1024px ) and ( max-width: 1199px )
+			font-size: 2.5rem
+
+		@media screen and ( min-width: 1200px )
+			font-size: 3rem
+			
+
+		span
+			color: #66464D
+			//color: #87555D
+
+	&__h2
+		font-family: $secundary-font
+		font-weight: 400
+		font-style: italic
+		color: #185E9A
+
+		@media screen and ( max-width: 767px )
+			width: 100%
+			padding: 5px 0
+			font-size: 16px
+			text-align: center
+			
+
+		@media screen and ( min-width: 768px ) and ( max-width: 1023px )
+			font-size: 2rem
+			text-align: right
+
+		@media screen and ( min-width: 1024px ) and ( max-width: 1199px )
+			font-size: 2rem
+
+		@media screen and ( min-width: 1200px )
+			font-size: 2.5rem
+
+		&::before
+			content: '"'
+
+		&::after
+			content: '"'
+
