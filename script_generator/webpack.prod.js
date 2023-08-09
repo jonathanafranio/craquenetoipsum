@@ -4,7 +4,7 @@ const config = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'mipsum.min.js',
+    filename: 'craqueneto.ipsum.min.js',
   },
   module: {
     rules: [
