@@ -27,11 +27,11 @@ const config = {
     port: 8080
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: `${DEMO_DIR}/index.html`,
-      filename: 'index.html',
-      inject: 'head',
-    }),
+    //new HtmlWebpackPlugin({
+    //  template: `${DEMO_DIR}/index.html`,
+    //  filename: 'index.html',
+    //  inject: 'head',
+    //}),
   ]
 }
 

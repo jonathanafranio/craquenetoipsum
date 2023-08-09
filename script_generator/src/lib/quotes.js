@@ -61,5 +61,9 @@ export const mussumQuotes = [
 
   'Num falei, num falei que a bola ia bater na trave, num falei que quem faz pecado paga aqui, num falei pra oce peppinha, num falei Maria Eugenia, eu vou fazer o programa de peppinha.',
 
-  'O Felipão, chupa Felipão! bobão! Eu que sou o bobão na Felipe Melo. 51 vai pra casa do cacete, Velloso. 51 é pinga!'
+  'O Felipão, chupa Felipão! bobão! Eu que sou o bobão na Felipe Melo. 51 vai pra casa do cacete, Velloso. 51 é pinga!',
+
+  'Ceis não jogam nada. Ceis não jogam nada. Ceis ganham tudo dinheiro, são milionários, são celebridade. A verdade é que ceis são tudo zé ruela. Sabe ceis pensam, só em dinheiro, em festa.',
+
+  'Se oceis ganharem do Iraque de 10 a 0, não fazem mais do que a obrigação. Mais que a obrigação! Se ganharem medalha de ouro, não fazem mais do que a obrigação.'
 ]
